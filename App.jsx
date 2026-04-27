@@ -200,6 +200,27 @@ export default function App() {
         r.onerror = rej;
         r.readAsDataURL(file);
       });
+
+      const prompt = `You are a CrossFit/weightlifting workout parser. Look at this image of a workout whiteboard or note.
+
+Extract all exercises and return ONLY a valid JSON object in this exact format, nothing else:
+{
+  "exercises": [
+    { "name": "Exercise Name", "sets": 3, "reps": "10" },
+    { "name": "Exercise Name", "sets": 4, "reps": "5" }
+  ],
+  "notes": "any other info like AMRAP time, rest periods, week number etc"
+}
+
+Rules:
+- "name": use the exercise name as written, clean it up slightly if needed
+- "sets": number of sets as integer. If it says "3 RFQ" or "3 rounds" that means 3 sets
+- "reps": reps as string (e.g. "10", "5-5-5-5", "10/10", "8-12")
+- If an exercise has reps per side like "10/10" keep as "10/10"
+- Include ALL exercises you see
+- "notes": everything else (week number, coach name, rest times, weights prescribed etc)
+- Return ONLY the JSON, no explanation`;
+
       const resp = await fetch("https://api.anthropic.com/v1/messages", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -210,14 +231,43 @@ export default function App() {
             role: "user",
             content: [
               { type: "image", source: { type: "base64", media_type: file.type || "image/jpeg", data: base64 } },
-              { type: "text", text: "Read this image and transcribe exactly what is written. Return only the text content, nothing else. Keep the original formatting with line breaks." }
+              { type: "text", text: prompt }
             ]
           }]
         })
       });
-      const data = await resp.json();
-      const text = data.content?.map(b => b.text || "").join("").trim();
-      if (text) setLogNotes(n => n ? n + "\n" + text : text);
+
+      const apiData = await resp.json();
+      const raw = apiData.content?.map(b => b.text || "").join("").trim();
+
+      // Parse the JSON response
+      let parsed;
+      try {
+        const clean = raw.replace(/^```json|^```|```$/gm, "").trim();
+        parsed = JSON.parse(clean);
+      } catch {
+        // If parsing fails, just put raw text in notes
+        setLogNotes(n => n ? n + "\n" + raw : raw);
+        setImgReading(false);
+        return;
+      }
+
+      // Build exercise cards from parsed data
+      if (parsed.exercises && parsed.exercises.length > 0) {
+        const newExercises = parsed.exercises.map(ex => {
+          const numSets = parseInt(ex.sets) || 1;
+          const sets = Array.from({ length: numSets }, () => ({ reps: ex.reps || "", weight: "" }));
+          return { name: ex.name, sets };
+        });
+        setExercises(prev => [...prev, ...newExercises]);
+        if (newExercises.length > 0) setLiftSelectVal(newExercises[0].name);
+      }
+
+      // Put extra notes into notes field
+      if (parsed.notes) {
+        setLogNotes(n => n ? n + "\n" + parsed.notes : parsed.notes);
+      }
+
     } catch (e) {
       alert("Could not read image. Please try again.");
     }
