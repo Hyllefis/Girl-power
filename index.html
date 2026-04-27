@@ -1,97 +1,52 @@
-Last login: Mon Apr 27 20:19:43 on ttys000
-MacBook-Pro:~ tinemarienhof$ <!DOCTYPE html>
--bash: !DOCTYPE: event not found
-MacBook-Pro:~ tinemarienhof$ <html lang="en">
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ <head>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$   <meta charset="UTF-8" />
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$   <meta name="theme-color" content="#c9706a" />
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$   <meta name="apple-mobile-web-app-capable" content="yes" />
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$   <meta name="apple-mobile-web-app-title" content="Girl Power" />
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$   <link rel="manifest" href="/manifest.json" />
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$   <title>Girl Power</title>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$   <style>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$     * { box-sizing: border-box; margin: 0; padding: 0; }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$     body { background: #fdf8f5; }
--bash: body: command not found
-MacBook-Pro:~ tinemarienhof$     input[type=number]::-webkit-inner-spin-button,
--bash: input[type=number]::-webkit-inner-spin-button,: command not found
-MacBook-Pro:~ tinemarienhof$     input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$     input[type=date] { color-scheme: light; }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$   </style>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ </head>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ <body>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$   <div id="root"></div>
--bash: syntax error near unexpected token `<'
-MacBook-Pro:~ tinemarienhof$   <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
--bash: syntax error near unexpected token `<'
-MacBook-Pro:~ tinemarienhof$   <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
--bash: syntax error near unexpected token `<'
-MacBook-Pro:~ tinemarienhof$   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
--bash: syntax error near unexpected token `<'
-MacBook-Pro:~ tinemarienhof$   <script type="text/babel" data-presets="react">
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ const { useState, useEffect } = React;
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$ const LIFT_LIBRARY = {
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$   "Squat":     ["Back Squat","Front Squat","Overhead Squat","Box Squat","Pause Squat","Safety Bar Squat","Goblet Squat","Bulgarian Split Squat"],
--bash: Squat:: command not found
-MacBook-Pro:~ tinemarienhof$   "Hinge":     ["Deadlift","Romanian Deadlift","Sumo Deadlift","Trap Bar Deadlift","Good Morning","Stiff-Leg Deadlift","Hip Thrust","Kettlebell Swing"],
--bash: Hinge:: command not found
-MacBook-Pro:~ tinemarienhof$   "Push":      ["Bench Press","Overhead Press","Push Press","Incline Bench Press","Dumbbell Press","Dips","Handstand Push-ups","Push-ups"],
--bash: Push:: command not found
-MacBook-Pro:~ tinemarienhof$   "Pull":      ["Pull-ups","Chin-ups","Barbell Row","Pendlay Row","Dumbbell Row","Cable Row","Lat Pulldown","Muscle-ups"],
--bash: Pull:: command not found
-MacBook-Pro:~ tinemarienhof$   "Olympic":   ["Clean","Power Clean","Hang Clean","Clean & Jerk","Snatch","Power Snatch","Hang Snatch","Push Jerk","Split Jerk","Muscle Snatch"],
--bash: Olympic:: command not found
-MacBook-Pro:~ tinemarienhof$   "Accessory": ["Bicep Curl","Tricep Extension","Lateral Raise","Face Pull","Shrug","Calf Raise","Leg Press","Leg Curl","Ab Wheel","Plank"],
--bash: Accessory:: command not found
-MacBook-Pro:~ tinemarienhof$   "CrossFit":  ["Thruster","Wall Ball","Box Jump","Double Unders","Row (cal)","Bike (cal)","Run (m)","Burpees","Toes to Bar","Assault Bike (cal)"],
--bash: CrossFit:: command not found
-MacBook-Pro:~ tinemarienhof$ };
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$ const ALL_LIFTS = Object.values(LIFT_LIBRARY).flat();
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$ const SK = "wod_v7";
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$ const CK = "wod_custom_v7";
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$ function load(k, fb) { try { const r = localStorage.getItem(k); return r ? JSON.parse(r) : fb; } catch { return fb; } }
--bash: syntax error near unexpected token `k,'
-MacBook-Pro:~ tinemarienhof$ function persist(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
--bash: syntax error near unexpected token `k,'
-MacBook-Pro:~ tinemarienhof$ function today() { return new Date().toISOString().split("T")[0]; }
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$ function fmt(iso) { return new Date(iso).toLocaleDateString("en-GB", { weekday:"short", day:"numeric", month:"short" }); }
--bash: syntax error near unexpected token `iso'
-MacBook-Pro:~ tinemarienhof$ function fmtShort(iso) { return new Date(iso).toLocaleDateString("en-GB", { day:"numeric", month:"short" }); }
--bash: syntax error near unexpected token `iso'
-MacBook-Pro:~ tinemarienhof$ function blankSet() { return { reps:"", weight:"" }; }
-MacBook-Pro:~ tinemarienhof$ function isPowerType(t) { return t === "Power" || t === "Weightlifting" || t === "Strength" || t === "Olympic Lifting"; }
--bash: syntax error near unexpected token `t'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#c9706a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Girl Power" />
+  <link rel="manifest" href="/manifest.json" />
+  <title>Girl Power</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #fdf8f5; }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+    input[type=date] { color-scheme: light; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel" data-presets="react">
+const { useState, useEffect } = React;
+
+
+const LIFT_LIBRARY = {
+  "Squat":     ["Back Squat","Front Squat","Overhead Squat","Box Squat","Pause Squat","Safety Bar Squat","Goblet Squat","Bulgarian Split Squat"],
+  "Hinge":     ["Deadlift","Romanian Deadlift","Sumo Deadlift","Trap Bar Deadlift","Good Morning","Stiff-Leg Deadlift","Hip Thrust","Kettlebell Swing"],
+  "Push":      ["Bench Press","Overhead Press","Push Press","Incline Bench Press","Dumbbell Press","Dips","Handstand Push-ups","Push-ups"],
+  "Pull":      ["Pull-ups","Chin-ups","Barbell Row","Pendlay Row","Dumbbell Row","Cable Row","Lat Pulldown","Muscle-ups"],
+  "Olympic":   ["Clean","Power Clean","Hang Clean","Clean & Jerk","Snatch","Power Snatch","Hang Snatch","Push Jerk","Split Jerk","Muscle Snatch"],
+  "Accessory": ["Bicep Curl","Tricep Extension","Lateral Raise","Face Pull","Shrug","Calf Raise","Leg Press","Leg Curl","Ab Wheel","Plank"],
+  "CrossFit":  ["Thruster","Wall Ball","Box Jump","Double Unders","Row (cal)","Bike (cal)","Run (m)","Burpees","Toes to Bar","Assault Bike (cal)"],
+};
+const ALL_LIFTS = Object.values(LIFT_LIBRARY).flat();
+
+const SK = "wod_v7";
+const CK = "wod_custom_v7";
+
+function load(k, fb) { try { const r = localStorage.getItem(k); return r ? JSON.parse(r) : fb; } catch { return fb; } }
+function persist(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+function today() { return new Date().toISOString().split("T")[0]; }
+function fmt(iso) { return new Date(iso).toLocaleDateString("en-GB", { weekday:"short", day:"numeric", month:"short" }); }
+function fmtShort(iso) { return new Date(iso).toLocaleDateString("en-GB", { day:"numeric", month:"short" }); }
+function blankSet() { return { reps:"", weight:"" }; }
+function isPowerType(t) { return t === "Power" || t === "Weightlifting" || t === "Strength" || t === "Olympic Lifting"; }
 
 // ── Design tokens ─────────────────────────────────────────────
 const C = {
@@ -114,43 +69,6 @@ const FONT_LABEL   = "'Helvetica Neue', Arial, sans-serif";
 
 // ── Progress Chart ────────────────────────────────────────────
 function ProgressChart({ points }) {
-  if (points.length < MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$ // ── Design tokens ─────────────────────────────────────────────
--bash: //: is a directory
-MacBook-Pro:~ tinemarienhof$ const C = {
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$   bg:       "#fdf8f5",       // warm cream
--bash: bg:: command not found
-MacBook-Pro:~ tinemarienhof$   surface:  "#ffffff",       // white cards
--bash: surface:: command not found
-MacBook-Pro:~ tinemarienhof$   surface2: "#fef3f0",       // blush tint
--bash: surface2:: command not found
-MacBook-Pro:~ tinemarienhof$   border:   "#f0e4de",       // soft rose border
--bash: border:: command not found
-MacBook-Pro:~ tinemarienhof$   border2:  "#e8d5cd",
--bash: border2:: command not found
-MacBook-Pro:~ tinemarienhof$   rose:     "#c9706a",       // main accent — dusty rose
--bash: rose:: command not found
-MacBook-Pro:~ tinemarienhof$   roseDark: "#a85550",
--bash: roseDark:: command not found
-MacBook-Pro:~ tinemarienhof$   rosePale: "#f5e0dd",
--bash: rosePale:: command not found
-MacBook-Pro:~ tinemarienhof$   text:     "#3d2c2a",       // warm dark brown
--bash: text:: command not found
-MacBook-Pro:~ tinemarienhof$   text2:    "#8a6b66",       // muted
--bash: text2:: command not found
-MacBook-Pro:~ tinemarienhof$   text3:    "#b89e99",       // very muted
--bash: text3:: command not found
-MacBook-Pro:~ tinemarienhof$   gold:     "#c9706a",       // reuse rose for PRs
--bash: gold:: command not found
-MacBook-Pro:~ tinemarienhof$ };
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$ 
-const FONT_BODY    = "'Georgia', 'Times New Roman', serif";
-const FONT_LABEL   = "'Helvetica Neue', Arial, sans-serif";
-
-// ── Progress Chart ────────────────────────────────────────────
-function ProgressChart({ points }) {
   if (points.length < 2) return (
     <div style={{ color:C.text3, fontSize:12, padding:"12px 0", textAlign:"center", fontFamily:FONT_LABEL }}>
       Log at least 2 sessions to see your progress ✨
@@ -163,398 +81,191 @@ function ProgressChart({ points }) {
   const cx = i => pl + (i / (points.length - 1)) * iW;
   const cy = v => pt + iH - ((v - lo) / range) * iH;
   const line = points.map((p, i) => `${cx(i)},${cy(p.kg)}`).join(" ");
-  const area = `${cx(0)},${H-pb} ` + points.map((p,i) => `${cx(i)},${cy(p.kg)Mac serif";:~ tinemarienhof$ const FONT_BODY    = "'Georgia', 'Times New Roman', 
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$ const FONT_LABEL   = "'Helvetica Neue', Arial, sans-serif";
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$ // ── Progress Chart ────────────────────────────────────────────
--bash: //: is a directory
-MacBook-Pro:~ tinemarienhof$ function ProgressChart({ points }) {
--bash: syntax error near unexpected token `{'
-MacBook-Pro:~ tinemarienhof$   if (points.length < 2) return (
--bash: syntax error near unexpected token `return'
-MacBook-Pro:~ tinemarienhof$     <div style={{ color:C.text3, fontSize:12, padding:"12px 0", textAlign:"center", fontFamily:FONT_LABEL }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$       Log at least 2 sessions to see your progress ✨
-Log: Unknown subcommand 'at'
-usage:
-    log <command>
+  const area = `${cx(0)},${H-pb} ` + points.map((p,i) => `${cx(i)},${cy(p.kg)}`).join(" ") + ` ${cx(points.length-1)},${H-pb}`;
+  return (
+    <svg width="100%" viewBox={`0 0 ${W} ${H}`}>
+      {[0, 0.5, 1].map(t => (
+        <g key={t}>
+          <line x1={pl} y1={pt+iH-t*iH} x2={W-pr} y2={pt+iH-t*iH} stroke={C.border} strokeWidth="1"/>
+          <text x={pl-4} y={pt+iH-t*iH+4} fontSize="9" fill={C.text3} textAnchor="end">{(lo+t*range).toFixed(1)}</text>
+        </g>
+      ))}
+      <polygon points={area} fill={C.rose} opacity="0.1"/>
+      <polyline points={line} fill="none" stroke={C.rose} strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round"/>
+      {points.map((p, i) => (
+        <g key={i}>
+          <circle cx={cx(i)} cy={cy(p.kg)} r="4" fill={C.rose}/>
+          {(i === 0 || i === points.length-1 || points.length <= 5 || i % Math.ceil(points.length/4) === 0) && (
+            <text x={cx(i)} y={H-pb+14} fontSize="8" fill={C.text3} textAnchor="middle">{fmtShort(p.date)}</text>
+          )}
+        </g>
+      ))}
+    </svg>
+  );
+}
 
-global options:
-    -?, --help
-    -q, --quiet
-    -v, --verbose
+// ── Set Table ─────────────────────────────────────────────────
+function SetTable({ sets, prKg, onChange, onAddSet, onRemoveSet }) {
+  const cell = {
+    background: C.surface2, border:`1px solid ${C.border}`, color:C.text,
+    padding:"10px 6px", fontSize:15, borderRadius:10, fontFamily:FONT_BODY,
+    width:"100%", boxSizing:"border-box", outline:"none", textAlign:"center", fontWeight:600,
+  };
+  return (
+    <div>
+      <div style={{ display:"grid", gridTemplateColumns:"28px 1fr 1fr 24px", gap:6, paddingBottom:8 }}>
+        <span/>
+        <span style={{ fontSize:9, color:C.text3, letterSpacing:2, textAlign:"center", textTransform:"uppercase", fontFamily:FONT_LABEL }}>Reps</span>
+        <span style={{ fontSize:9, color:C.text3, letterSpacing:2, textAlign:"center", textTransform:"uppercase", fontFamily:FONT_LABEL }}>kg</span>
+        <span/>
+      </div>
+      {sets.map((s, i) => {
+        const w = parseFloat(s.weight);
+        const pr = prKg && !isNaN(w) && w > 0 && w >= prKg;
+        return (
+          <div key={i} style={{ display:"grid", gridTemplateColumns:"28px 1fr 1fr 24px", gap:6, marginBottom:8, alignItems:"center" }}>
+            <span style={{ fontSize:11, color:pr?C.rose:C.text3, fontWeight:700, textAlign:"center", fontFamily:FONT_LABEL }}>{pr?"♡":i+1}</span>
+            <input type="number" inputMode="numeric" placeholder="—" style={cell}
+              value={s.reps} onChange={e => onChange(i,"reps",e.target.value)} />
+            <input type="number" inputMode="decimal" placeholder="—"
+              style={{ ...cell, color:pr?C.rose:C.text, borderColor:pr?C.rose:C.border }}
+              value={s.weight} onChange={e => onChange(i,"weight",e.target.value)} />
+            {sets.length > 1
+              ? <button onClick={() => onRemoveSet(i)} style={{ background:"none", border:"none", color:C.text3, cursor:"pointer", fontSize:16, padding:0 }}>×</button>
+              : <span/>}
+          </div>
+        );
+      })}
+      <button onClick={onAddSet} style={{
+        width:"100%", background:"transparent", border:`1px dashed ${C.border2}`,
+        color:C.text3, padding:"9px", fontSize:11, letterSpacing:1,
+        borderRadius:10, cursor:"pointer", fontFamily:FONT_LABEL, marginTop:2,
+      }}>
+        + add set
+      </button>
+    </div>
+  );
+}
 
-commands:
-    collect         gather system logs into a log archive
-    config          view/change logging system settings
-    erase           delete system logging data
-    show            view/search system logs
-    stream          watch live system logs
-    stats           show system logging statistics
+// ── App ───────────────────────────────────────────────────────
+function App() {
+  const [data,          setData]          = useState(() => load(SK, { sessions:[], prs:{} }));
+  const [customs,       setCustoms]       = useState(() => load(CK, []));
+  const [view,          setView]          = useState("log");
+  const [logDate,       setLogDate]       = useState(today());
+  const [logType,       setLogType]       = useState("Power");
+  const [logName,       setLogName]       = useState("");
+  const [logNotes,      setLogNotes]      = useState("");
+  const [exercises,     setExercises]     = useState([]);
+  const [addCust,       setAddCust]       = useState(false);
+  const [custName,      setCustName]      = useState("");
+  const [liftSelectVal, setLiftSelectVal] = useState("");
+  const [histCat,       setHistCat]       = useState(null);
+  const [openLift,      setOpenLift]      = useState(null);
+  const [openWod,       setOpenWod]       = useState(null);
+  const [saved,         setSaved]         = useState(false);
+  const [imgReading,    setImgReading]    = useState(false);
+  const [prCelebration, setPrCelebration] = useState(null); // {name, weight}
 
-further help:
-    log help <command>
-    log help predicates
-MacBook-Pro:~ tinemarienhof$     </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$   );
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$   const W = 300, H = 100, pl = 34, pr = 8, pt = 6, pb = 22;
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$   const iW = W - pl - pr, iH = H - pt - pb;
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$   const vals = points.map(p => p.kg);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const lo = Math.min(...vals), hi = Math.max(...vals), range = hi - lo || 1;
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const cx = i => pl + (i / (points.length - 1)) * iW;
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const cy = v => pt + iH - ((v - lo) / range) * iH;
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const line = points.map((p, i) => `${cx(i)},${cy(p.kg)}`).join(" ");
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const area = `${cx(0)},${H-pb} ` + points.map((p,i) => `${cx(i)},${cy(p.kg)}`).join(" ") + ` ${cx(points.length-1)},${H-pb}`;
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   return (
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$     <svg width="100%" viewBox={`0 0 ${W} ${H}`}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$       {[0, 0.5, 1].map(t => (
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$         <g key={t}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           <line x1={pl} y1={pt+iH-t*iH} x2={W-pr} y2={pt+iH-t*iH} stroke={C.border} strokeWidth="1"/>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           <text x={pl-4} y={pt+iH-t*iH+4} fontSize="9" fill={C.text3} textAnchor="end">{(lo+t*range).toFixed(1)}</text>
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$         </g>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$       ))}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$       <polygon points={area} fill={C.rose} opacity="0.1"/>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$       <polyline points={line} fill="none" stroke={C.rose} strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round"/>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$       {points.map((p, i) => (
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$         <g key={i}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           <circle cx={cx(i)} cy={cy(p.kg)} r="4" fill={C.rose}/>
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$           {(i === 0 || i === points.length-1 || points.length <= 5 || i % Math.ceil(points.length/4) === 0) && (
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$             <text x={cx(i)} y={H-pb+14} fontSize="8" fill={C.text3} textAnchor="middle">{fmtShort(p.date)}</text>
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$           )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$         </g>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$       ))}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$     </svg>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$   );
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$ }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$ // ── Set Table ─────────────────────────────────────────────────
--bash: //: is a directory
-MacBook-Pro:~ tinemarienhof$ function SetTable({ sets, prKg, onChange, onAddSet, onRemoveSet }) {
--bash: syntax error near unexpected token `{'
-MacBook-Pro:~ tinemarienhof$   const cell = {
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$     background: C.surface2, border:`1px solid ${C.border}`, color:C.text,
--bash: ${C.border}: bad substitution
--bash: background:: command not found
-MacBook-Pro:~ tinemarienhof$     padding:"10px 6px", fontSize:15, borderRadius:10, fontFamily:FONT_BODY,
--bash: padding:10px 6px,: command not found
-MacBook-Pro:~ tinemarienhof$     width:"100%", boxSizing:"border-box", outline:"none", textAlign:"center", fontWeight:600,
--bash: width:100%,: command not found
-MacBook-Pro:~ tinemarienhof$   };
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$   return (
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$     <div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$       <div style={{ display:"grid", gridTemplateColumns:"28px 1fr 1fr 24px", gap:6, paddingBottom:8 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$         <span/>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$         <span style={{ fontSize:9, color:C.text3, letterSpacing:2, textAlign:"center", textTransform:"uppercase", fontFamily:FONT_LABEL }}>Reps</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$         <span style={{ fontSize:9, color:C.text3, letterSpacing:2, textAlign:"center", textTransform:"uppercase", fontFamily:FONT_LABEL }}>kg</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$         <span/>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$       </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$       {sets.map((s, i) => {
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$         const w = parseFloat(s.weight);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$         const pr = prKg && !isNaN(w) && w > 0 && w >= prKg;
--bash: !isNaN: event not found
-MacBook-Pro:~ tinemarienhof$         return (
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           <div key={i} style={{ display:"grid", gridTemplateColumns:"28px 1fr 1fr 24px", gap:6, marginBottom:8, alignItems:"center" }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             <span style={{ fontSize:11, color:pr?C.rose:C.text3, fontWeight:700, textAlign:"center", fontFamily:FONT_LABEL }}>{pr?"♡":i+1}</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             <input type="number" inputMode="numeric" placeholder="—" style={cell}
--bash: input: No such file or directory
-MacBook-Pro:~ tinemarienhof$               value={s.reps} onChange={e => onChange(i,"reps",e.target.value)} />
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$             <input type="number" inputMode="decimal" placeholder="—"
--bash: input: No such file or directory
-MacBook-Pro:~ tinemarienhof$               style={{ ...cell, color:pr?C.rose:C.text, borderColor:pr?C.rose:C.border }}
--bash: ...cell,: command not found
-MacBook-Pro:~ tinemarienhof$               value={s.weight} onChange={e => onChange(i,"weight",e.target.value)} />
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$             {sets.length > 1
--bash: {sets.length: command not found
-MacBook-Pro:~ tinemarienhof$               ? <button onClick={() => onRemoveSet(i)} style={{ background:"none", border:"none", color:C.text3, cursor:"pointer", fontSize:16, padding:0 }}>×</button>
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$               : <span/>}
--bash: span/: No such file or directory
-MacBook-Pro:~ tinemarienhof$           </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$         );
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$       })}
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$       <button onClick={onAddSet} style={{
--bash: button: No such file or directory
-MacBook-Pro:~ tinemarienhof$         width:"100%", background:"transparent", border:`1px dashed ${C.border2}`,
--bash: ${C.border2}: bad substitution
--bash: width:100%,: command not found
-MacBook-Pro:~ tinemarienhof$         color:C.text3, padding:"9px", fontSize:11, letterSpacing:1,
--bash: color:C.text3,: command not found
-MacBook-Pro:~ tinemarienhof$         borderRadius:10, cursor:"pointer", fontFamily:FONT_LABEL, marginTop:2,
--bash: borderRadius:10,: command not found
-MacBook-Pro:~ tinemarienhof$       }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$         + add set
--bash: +: command not found
-MacBook-Pro:~ tinemarienhof$       </button>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$     </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$   );
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$ }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$ // ── App ───────────────────────────────────────────────────────
--bash: //: is a directory
-MacBook-Pro:~ tinemarienhof$ function App() {
->   const [data,          setData]          = useState(() => load(SK, { sessions:[], prs:{} }));
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [customs,       setCustoms]       = useState(() => load(CK, []));
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [view,          setView]          = useState("log");
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [logDate,       setLogDate]       = useState(today());
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [logType,       setLogType]       = useState("Power");
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [logName,       setLogName]       = useState("");
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [logNotes,      setLogNotes]      = useState("");
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [exercises,     setExercises]     = useState([]);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [addCust,       setAddCust]       = useState(false);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [custName,      setCustName]      = useState("");
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [liftSelectVal, setLiftSelectVal] = useState("");
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [histCat,       setHistCat]       = useState(null);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [openLift,      setOpenLift]      = useState(null);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [openWod,       setOpenWod]       = useState(null);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [saved,         setSaved]         = useState(false);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [imgReading,    setImgReading]    = useState(false);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const [prCelebration, setPrCelebration] = useState(null); // {name, weight}
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$   useEffect(() => { persist(SK, data); },    [data]);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   useEffect(() => { persist(CK, customs); }, [customs]);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$   const isWL = logType === "Power";
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$   const todaySessions = data.sessions.filter(s => s.date === logDate);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const savedLifts   = [...new Set(data.sessions.flatMap(s => s.exercises.map(e => e.name)))];
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const currentLifts = exercises.map(e => e.name);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const recentLifts  = [...new Set([...currentLifts, ...savedLifts])];
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const otherLifts   = ALL_LIFTS.filter(l => !recentLifts.includes(l));
--bash: !recentLifts.includes: event not found
-MacBook-Pro:~ tinemarienhof$   const otherCustom  = customs.filter(l => !recentLifts.includes(l));
--bash: !recentLifts.includes: event not found
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$   const powerSessions = data.sessions.filter(s => isPowerType(s.type));
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const wodSessions   = data.sessions.filter(s => s.type === "WOD");
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   const liftIndex = {};
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$   powerSessions.forEach(ses => {
--bash: syntax error near unexpected token `ses'
-MacBook-Pro:~ tinemarienhof$     ses.exercises.forEach(ex => {
--bash: syntax error near unexpected token `ex'
-MacBook-Pro:~ tinemarienhof$       if (!liftIndex[ex.name]) liftIndex[ex.name] = [];
--bash: !liftIndex[ex.name]: event not found
-MacBook-Pro:~ tinemarienhof$       liftIndex[ex.name].push({ date: ses.date, sets: ex.sets });
--bash: syntax error near unexpected token `{'
-MacBook-Pro:~ tinemarienhof$     });
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$   });
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$   const liftNames = Object.keys(liftIndex).sort();
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$   function getProgress(name) {
--bash: syntax error near unexpected token `name'
-MacBook-Pro:~ tinemarienhof$     const byDate = {};
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$     data.sessions.forEach(ses => {
--bash: syntax error near unexpected token `ses'
-MacBook-Pro:~ tinemarienhof$       ses.exercises.filter(ex => ex.name === name).forEach(ex => {
--bash: syntax error near unexpected token `ex'
-MacBook-Pro:~ tinemarienhof$         const best = Math.max(...ex.sets.map(s => parseFloat(s.weight) || 0));
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$         if (best > 0 && (!byDate[ses.date] || best > byDate[ses.date])) byDate[ses.date] = best;
--bash: !byDate[ses.date]: event not found
-MacBook-Pro:~ tinemarienhof$       });
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$     });
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$     return Object.entries(byDate).sort((a,b) => a[0].localeCompare(b[0])).map(([date,kg]) => ({ date, kg }));
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$   }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$   function addLift(name) {
--bash: syntax error near unexpected token `name'
-MacBook-Pro:~ tinemarienhof$     if (!name || name === "__custom__") return;
--bash: !name: event not found
-MacBook-Pro:~ tinemarienhof$     setExercises(ex => [...ex, { name, sets:[blankSet()] }]);
--bash: syntax error near unexpected token `ex'
-MacBook-Pro:~ tinemarienhof$     setLiftSelectVal(name);
--bash: syntax error near unexpected token `name'
-MacBook-Pro:~ tinemarienhof$   }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$   function confirmCustom() {
->     const n = custName.trim(); if (!n) return;
--bash: !n: event not found
->     if (!customs.includes(n)) setCustoms(c => [...c, n]);
--bash: !customs.includes: event not found
->     setExercises(ex => [...ex, { name:n, sets:[blankSet()] }]);
--bash: syntax error near unexpected token `ex'
-MacBook-Pro:~ tinemarienhof$     setCustName(""); setAddCust(false); setLiftSelectVal(n);
--bash: syntax error near unexpected token `""'
-MacBook-Pro:~ tinemarienhof$   }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$   function updSet(ei,si,f,v) { setExercises(exs => exs.map((ex,i) => i!==ei?ex:{ ...ex, sets:ex.sets.map((s,j) => j!==si?s:{ ...s,[f]:v }) })); }
--bash: syntax error near unexpected token `ei,si,f,v'
-MacBook-Pro:~ tinemarienhof$   function addSet(ei)        { setExercises(exs => exs.map((ex,i) => i!==ei?ex:{ ...ex, sets:[...ex.sets,blankSet()] })); }
--bash: syntax error near unexpected token `ei'
-MacBook-Pro:~ tinemarienhof$   function remSet(ei,si)     { setExercises(exs => exs.map((ex,i) => i!==ei?ex:{ ...ex, sets:ex.sets.filter((_,j) => j!==si) })); }
--bash: syntax error near unexpected token `ei,si'
-MacBook-Pro:~ tinemarienhof$   function remEx(ei)         { setExercises(exs => exs.filter((_,i) => i!==ei)); }
--bash: syntax error near unexpected token `ei'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$   async function readImageNotes(file) {
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$     if (!file) return;
--bash: !file: event not found
-MacBook-Pro:~ tinemarienhof$     setImgReading(true);
--bash: syntax error near unexpected token `true'
-MacBook-Pro:~ tinemarienhof$     try {
--bash: try: command not found
-MacBook-Pro:~ tinemarienhof$       const base64 = await new Promise((res, rej) => {
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$         const r = new FileReader();
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$         r.onload = () => res(r.result.split(",")[1]);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$         r.onerror = rej;
--bash: r.onerror: command not found
-MacBook-Pro:~ tinemarienhof$         r.readAsDataURL(file);
--bash: syntax error near unexpected token `file'
-MacBook-Pro:~ tinemarienhof$       });
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$       const prompt = `You are a CrossFit/weightlifting workout parser. Look at this image of a workout whiteboard or note.
-> 
-> Extract all exercises and return ONLY a valid JSON object in this exact format, nothing else:
-> {
->   "exercises": [
->     { "name": "Exercise Name", "sets": 3, "reps": "10" },
->     { "name": "Exercise Name", "sets": 4, "reps": "5" }
->   ],
->   "notes": "any other info like AMRAP time, rest periods, week number etc"
-> }
-> 
-> Rules:
-> - "name": use the exercise name as written, clean it up slightly if needed
-> - "sets": number of sets as integer. If it says "3 RFQ" or "3 rounds" that means 3 sets
-> - "reps": reps as string (e.g. "10", "5-5-5-5", "10/10", "8-12")
-> - If an exercise has reps per side like "10/10" keep as "10/10"
-> - Include ALL exercises you see
-> - "notes": everything else (week number, coach name, rest times, weights prescribed etc)
-> - Return ONLY the JSON, no explanation`;
--bash: You: command not found
--bash: Extract: command not found
--bash: command substitution: line 15: syntax error near unexpected token `('
--bash: command substitution: line 15: `- "reps": reps as string (e.g. "10", "5-5-5-5", "10/10", "8-12")'
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$       const resp = await fetch("https://api.anthropic.com/v1/messages", {
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$         method: "POST",
--bash: method:: command not found
-MacBook-Pro:~ tinemarienhof$         headers: { "Content-Type": "application/json" },
--bash: headers:: command not found
-MacBook-Pro:~ tinemarienhof$         body: JSON.stringify({
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$           model: "claude-sonnet-4-20250514",
--bash: model:: command not found
-MacBook-Pro:~ tinemarienhof$           max_tokens: 1000,
--bash: max_tokens:: command not found
-MacBook-Pro:~ tinemarienhof$           messages: [{
--bash: messages:: command not found
-MacBook-Pro:~ tinemarienhof$             role: "user",
--bash: role:: command not found
-MacBook-Pro:~ tinemarienhof$             content: [
--bash: content:: command not found
-MacBook-Pro:~ tinemarienhof$               { type: "image", source: { type: "base64", media_type: file.type || "image/jpeg", data: base64 } },
->               { type: "text", text: prompt }
->             ]
->           }]
->         })
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$       });
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$       const apiData = await resp.json();
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$       const raw = apiData.content?.map(b => b.text || "").join("").trim();
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$ 
+  useEffect(() => { persist(SK, data); },    [data]);
+  useEffect(() => { persist(CK, customs); }, [customs]);
+
+  const isWL = logType === "Power";
+  const todaySessions = data.sessions.filter(s => s.date === logDate);
+  const savedLifts   = [...new Set(data.sessions.flatMap(s => s.exercises.map(e => e.name)))];
+  const currentLifts = exercises.map(e => e.name);
+  const recentLifts  = [...new Set([...currentLifts, ...savedLifts])];
+  const otherLifts   = ALL_LIFTS.filter(l => !recentLifts.includes(l));
+  const otherCustom  = customs.filter(l => !recentLifts.includes(l));
+
+  const powerSessions = data.sessions.filter(s => isPowerType(s.type));
+  const wodSessions   = data.sessions.filter(s => s.type === "WOD");
+  const liftIndex = {};
+  powerSessions.forEach(ses => {
+    ses.exercises.forEach(ex => {
+      if (!liftIndex[ex.name]) liftIndex[ex.name] = [];
+      liftIndex[ex.name].push({ date: ses.date, sets: ex.sets });
+    });
+  });
+  const liftNames = Object.keys(liftIndex).sort();
+
+  function getProgress(name) {
+    const byDate = {};
+    data.sessions.forEach(ses => {
+      ses.exercises.filter(ex => ex.name === name).forEach(ex => {
+        const best = Math.max(...ex.sets.map(s => parseFloat(s.weight) || 0));
+        if (best > 0 && (!byDate[ses.date] || best > byDate[ses.date])) byDate[ses.date] = best;
+      });
+    });
+    return Object.entries(byDate).sort((a,b) => a[0].localeCompare(b[0])).map(([date,kg]) => ({ date, kg }));
+  }
+
+  function addLift(name) {
+    if (!name || name === "__custom__") return;
+    setExercises(ex => [...ex, { name, sets:[blankSet()] }]);
+    setLiftSelectVal(name);
+  }
+  function confirmCustom() {
+    const n = custName.trim(); if (!n) return;
+    if (!customs.includes(n)) setCustoms(c => [...c, n]);
+    setExercises(ex => [...ex, { name:n, sets:[blankSet()] }]);
+    setCustName(""); setAddCust(false); setLiftSelectVal(n);
+  }
+  function updSet(ei,si,f,v) { setExercises(exs => exs.map((ex,i) => i!==ei?ex:{ ...ex, sets:ex.sets.map((s,j) => j!==si?s:{ ...s,[f]:v }) })); }
+  function addSet(ei)        { setExercises(exs => exs.map((ex,i) => i!==ei?ex:{ ...ex, sets:[...ex.sets,blankSet()] })); }
+  function remSet(ei,si)     { setExercises(exs => exs.map((ex,i) => i!==ei?ex:{ ...ex, sets:ex.sets.filter((_,j) => j!==si) })); }
+  function remEx(ei)         { setExercises(exs => exs.filter((_,i) => i!==ei)); }
+
+  async function readImageNotes(file) {
+    if (!file) return;
+    setImgReading(true);
+    try {
+      const base64 = await new Promise((res, rej) => {
+        const r = new FileReader();
+        r.onload = () => res(r.result.split(",")[1]);
+        r.onerror = rej;
+        r.readAsDataURL(file);
+      });
+
+      const prompt = `You are a CrossFit/weightlifting workout parser. Look at this image of a workout whiteboard or note.
+
+Extract all exercises and return ONLY a valid JSON object in this exact format, nothing else:
+{
+  "exercises": [
+    { "name": "Exercise Name", "sets": 3, "reps": "10" },
+    { "name": "Exercise Name", "sets": 4, "reps": "5" }
+  ],
+  "notes": "any other info like AMRAP time, rest periods, week number etc"
+}
+
+Rules:
+- "name": use the exercise name as written, clean it up slightly if needed
+- "sets": number of sets as integer. If it says "3 RFQ" or "3 rounds" that means 3 sets
+- "reps": reps as string (e.g. "10", "5-5-5-5", "10/10", "8-12")
+- If an exercise has reps per side like "10/10" keep as "10/10"
+- Include ALL exercises you see
+- "notes": everything else (week number, coach name, rest times, weights prescribed etc)
+- Return ONLY the JSON, no explanation`;
+
+      const resp = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-20250514",
+          max_tokens: 1000,
+          messages: [{
+            role: "user",
+            content: [
+              { type: "image", source: { type: "base64", media_type: file.type || "image/jpeg", data: base64 } },
+              { type: "text", text: prompt }
+            ]
+          }]
+        })
+      });
+
+      const apiData = await resp.json();
+      const raw = apiData.content?.map(b => b.text || "").join("").trim();
+
       // Parse the JSON response
       let parsed;
       try {
@@ -580,58 +291,8 @@ MacBook-Pro:~ tinemarienhof$
 
       // Put extra notes into notes field
       if (parsed.notes) {
-        setLogNotes(n => n ? n + "\n" + parsed.notes : parsed.notes)MacBook-Pro:~ tinemarienhof$       // Parse the JSON response
--bash: //: is a directory
-MacBook-Pro:~ tinemarienhof$       let parsed;
-MacBook-Pro:~ tinemarienhof$       try {
--bash: try: command not found
-MacBook-Pro:~ tinemarienhof$         const clean = raw.replace(/^```json|^```|```$/gm, "").trim();
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$         parsed = JSON.parse(clean);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$       } catch {
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$         // If parsing fails, just put raw text in notes
--bash: //: is a directory
-MacBook-Pro:~ tinemarienhof$         setLogNotes(n => n ? n + "\n" + raw : raw);
--bash: syntax error near unexpected token `n'
-MacBook-Pro:~ tinemarienhof$         setImgReading(false);
--bash: syntax error near unexpected token `false'
-MacBook-Pro:~ tinemarienhof$         return;
--bash: return: can only `return' from a function or sourced script
-MacBook-Pro:~ tinemarienhof$       }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$       // Build exercise cards from parsed data
--bash: //: is a directory
-MacBook-Pro:~ tinemarienhof$       if (parsed.exercises && parsed.exercises.length > 0) {
--bash: syntax error near unexpected token `{'
-MacBook-Pro:~ tinemarienhof$         const newExercises = parsed.exercises.map(ex => {
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$           const numSets = parseInt(ex.sets) || 1;
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$           const sets = Array.from({ length: numSets }, () => ({ reps: ex.reps || "", weight: "" }));
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$           return { name: ex.name, sets };
--bash: return: {: numeric argument required
--bash: return: can only `return' from a function or sourced script
-MacBook-Pro:~ tinemarienhof$         });
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$         setExercises(prev => [...prev, ...newExercises]);
--bash: syntax error near unexpected token `prev'
-MacBook-Pro:~ tinemarienhof$         if (newExercises.length > 0) setLiftSelectVal(newExercises[0].name);
--bash: syntax error near unexpected token `setLiftSelectVal'
-MacBook-Pro:~ tinemarienhof$       }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$       // Put extra notes into notes field
--bash: //: is a directory
-MacBook-Pro:~ tinemarienhof$       if (parsed.notes) {
--bash: syntax error near unexpected token `{'
-MacBook-Pro:~ tinemarienhof$         setLogNotes(n => n ? n + "\n" + parsed.notes : parsed.notes);
--bash: syntax error near unexpected token `n'
-MacBook-Pro:~ tinemarienhof$       }
--bash: syntax error near unexpected token `}'
+        setLogNotes(n => n ? n + "\n" + parsed.notes : parsed.notes);
+      }
 
     } catch (e) {
       alert("Could not read image. Please try again.");
@@ -656,86 +317,24 @@ MacBook-Pro:~ tinemarienhof$       }
     }));
     setData(d => ({ sessions:[session,...d.sessions], prs:p }));
     setExercises([]); setLogName(""); setLogNotes(""); setLiftSelectVal("");
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$     } catch (e) {
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$       alert("Could not read image. Please try again.");
--bash: syntax error near unexpected token `"Could not read image. Please try again."'
-MacBook-Pro:~ tinemarienhof$     }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$     setImgReading(false);
--bash: syntax error near unexpected token `false'
-MacBook-Pro:~ tinemarienhof$   }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$   function saveSession() {
->     const isPow = logType === "Power";
->     const vex = isPow ? exercises.map(ex => ({ ...ex, sets:ex.sets.filter(s=>s.reps||s.weight) })).filter(ex=>ex.sets.length>0) : [];
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$     if (isPow && !vex.length && !logNotes) return;
--bash: !vex.length: event not found
-MacBook-Pro:~ tinemarienhof$     if (!isPow && !logName && !logNotes) return;
--bash: !isPow: event not found
-MacBook-Pro:~ tinemarienhof$     const session = { id:Date.now(), date:logDate, type:logType, wodName:logName, notes:logNotes, exercises:vex };
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$     const p = { ...data.prs };
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$     const newPRs = [];
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$     vex.forEach(ex => ex.sets.forEach(s => {
--bash: syntax error near unexpected token `ex'
-MacBook-Pro:~ tinemarienhof$       const w = parseFloat(s.weight);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$       if (!isNaN(w) && w > 0 && (!p[ex.name] || w > p[ex.name])) {
--bash: !isNaN: event not found
-MacBook-Pro:~ tinemarienhof$         if (!p[ex.name] || w > p[ex.name]) newPRs.push({ name: ex.name, weight: w });
--bash: !p[ex.name]: event not found
-MacBook-Pro:~ tinemarienhof$         p[ex.name] = w;
--bash: p[ex.name]: command not found
-MacBook-Pro:~ tinemarienhof$       }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$     }));
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$     setData(d => ({ sessions:[session,...d.sessions], prs:p }));
--bash: syntax error near unexpected token `d'
-MacBook-Pro:~ tinemarienhof$     setExercises([]); setLogName(""); setLogNotes(""); setLiftSelectVal("");
--bash: syntax error near unexpected token `[]'
-MacBook-Pro:~ tinemarienhof$     setSaved(true); setTimeout(() => setSaved(false), 2500);
--bash: syntax error near unexpected token `true'
-MacBook-Pro:~ tinemarienhof$     if (newPRs.length > 0) {
--bash: syntax error near unexpected token `{'
-MacBook-Pro:~ tinemarienhof$       setPrCelebration(newPRs[0]);
--bash: syntax error near unexpected token `newPRs[0]'
-MacBook-Pro:~ tinemarienhof$       setTimeout(() => setPrCelebration(null), 4000);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$     }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$   }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$   // ── Shared styles ──
--bash: //: is a directory
-MacBook-Pro:~ tinemarienhof$   const inp = {
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$     width:"100%", background:C.surface, border:`1px solid ${C.border}`, color:C.text,
--bash: ${C.border}: bad substitution
--bash: width:100%,: command not found
-MacBook-Pro:~ tinemarienhof$     padding:"12px 14px", fontSize:15, borderRadius:12, fontFamily:FONT_BODY,
--bash: padding:12px 14px,: command not found
-MacBook-Pro:~ tinemarienhof$     boxSizing:"border-box", outline:"none",
--bash: boxSizing:border-box,: command not found
-MacBook-Pro:~ tinemarienhof$   };
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$   const sel = { ...inp, appearance:"none", WebkitAppearance:"none", MozAppearance:"none", cursor:"pointer" };
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$   const pBtn = {
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$     width:"100%", background:C.rose, color:"#fff", border:"none",
--bash: width:100%,: command not found
-MacBook-Pro:~ tinemarienhof$     padding:"15px", fontSize:13, letterSpacing:1, fontWeight:600,
--bash: padding:15px,: command not found
-MacBook-Pro:~ tinemarienhof$     borderRadius:14, cursor:"pointer", fontFamily:FONT_LABEL,
--bash: borderRadius:14,: command not found
+    setSaved(true); setTimeout(() => setSaved(false), 2500);
+    if (newPRs.length > 0) {
+      setPrCelebration(newPRs[0]);
+      setTimeout(() => setPrCelebration(null), 4000);
+    }
+  }
+
+  // ── Shared styles ──
+  const inp = {
+    width:"100%", background:C.surface, border:`1px solid ${C.border}`, color:C.text,
+    padding:"12px 14px", fontSize:15, borderRadius:12, fontFamily:FONT_BODY,
+    boxSizing:"border-box", outline:"none",
+  };
+  const sel = { ...inp, appearance:"none", WebkitAppearance:"none", MozAppearance:"none", cursor:"pointer" };
+  const pBtn = {
+    width:"100%", background:C.rose, color:"#fff", border:"none",
+    padding:"15px", fontSize:13, letterSpacing:1, fontWeight:600,
+    borderRadius:14, cursor:"pointer", fontFamily:FONT_LABEL,
     boxShadow:`0 4px 16px ${C.rose}44`,
   };
   const oBtn = {
@@ -754,82 +353,25 @@ MacBook-Pro:~ tinemarienhof$     borderRadius:14, cursor:"pointer", fontFamily:F
     flex:1, padding:"14px 4px", fontSize:10, letterSpacing:1, fontWeight:600,
     textTransform:"uppercase", border:"none", background:"transparent",
     color:a?C.rose:C.text3, cursor:"pointer",
-    bordMacBook-Pro:~ tinemarienhof$     boxShadow:`0 4px 16px ${C.rose}44`,
--bash: ${C.rose}44: bad substitution
--bash: boxShadow:,: command not found
-MacBook-Pro:~ tinemarienhof$   };
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$   const oBtn = {
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$     width:"100%", background:"transparent", color:C.rose, border:`1.5px solid ${C.rose}`,
--bash: ${C.rose}: bad substitution
--bash: width:100%,: command not found
-MacBook-Pro:~ tinemarienhof$     padding:"13px", fontSize:13, letterSpacing:1, fontWeight:600,
--bash: padding:13px,: command not found
-MacBook-Pro:~ tinemarienhof$     borderRadius:14, cursor:"pointer", fontFamily:FONT_LABEL,
--bash: borderRadius:14,: command not found
-MacBook-Pro:~ tinemarienhof$   };
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$   const gBtn = { background:"transparent", border:"none", color:C.text3, cursor:"pointer", fontSize:18, padding:"0 2px", fontFamily:FONT_LABEL, lineHeight:1 };
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$   const lbl  = { fontSize:10, letterSpacing:2, color:C.text3, textTransform:"uppercase", marginBottom:8, display:"block", fontFamily:FONT_LABEL };
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$   const card = {
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$     background:C.surface, border:`1px solid ${C.border}`,
--bash: ${C.border}: bad substitution
--bash: background:C.surface,: command not found
-MacBook-Pro:~ tinemarienhof$     borderRadius:16, marginBottom:12, overflow:"hidden",
--bash: borderRadius:16,: command not found
-MacBook-Pro:~ tinemarienhof$     boxShadow:"0 2px 12px rgba(180,100,90,0.06)",
--bash: boxShadow:0 2px 12px rgba(180,100,90,0.06),: command not found
-MacBook-Pro:~ tinemarienhof$   };
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$   const nb = (a) => ({
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$     flex:1, padding:"14px 4px", fontSize:10, letterSpacing:1, fontWeight:600,
--bash: flex:1,: command not found
-MacBook-Pro:~ tinemarienhof$     textTransform:"uppercase", border:"none", background:"transparent",
--bash: textTransform:uppercase,: command not found
-MacBook-Pro:~ tinemarienhof$     color:a?C.rose:C.text3, cursor:"pointer",
--bash: color:a?C.rose:C.text3,: command not found
-MacBook-Pro:~ tinemarienhof$     borderBottom:a?`2px solid ${C.rose}`:"2px solid transparent",
--bash: ${C.rose}: bad substitution
--bash: borderBottom:a?:2px solid transparent,: command not found
-MacBook-Pro:~ tinemarienhof$     fontFamily:FONT_LABEL,
--bash: fontFamily:FONT_LABEL,: command not found
-MacBook-Pro:~ tinemarienhof$   });
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$   const pill = {
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$     display:"inline-block", fontSize:9, letterSpacing:1, fontWeight:600,
--bash: display:inline-block,: command not found
-MacBook-Pro:~ tinemarienhof$     textTransform:"uppercase", padding:"3px 9px", borderRadius:20,
--bash: textTransform:uppercase,: command not found
-MacBook-Pro:~ tinemarienhof$     background:C.rosePale, color:C.rose, border:`1px solid ${C.border2}`,
--bash: ${C.border2}: bad substitution
--bash: background:C.rosePale,: command not found
-MacBook-Pro:~ tinemarienhof$     fontFamily:FONT_LABEL,
--bash: fontFamily:FONT_LABEL,: command not found
-MacBook-Pro:~ tinemarienhof$   };
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$   const dateStr = new Date().toLocaleDateString("en-GB", { weekday:"long", day:"numeric", month:"long" });
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$   return (
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$     <div style={{ minHeight:"100vh", background:C.bg, color:C.text, fontFamily:FONT_BODY, maxWidth:480, margin:"0 auto", paddingBottom:90 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$       {/* ── Header ── */}
--bash: {/*: Not a directory
-MacBook-Pro:~ tinemarienhof$       <div style={{ padding:"28px 20px 18px", borderBottom:`1px solid ${C.border}`, background:C.surface }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$         <div style={{ fontSize:10, fontWeight:600, letterSpacing:4, color:C.rose, textTransform:"uppercase", marginBottom:6, fontFamily:FONT_LABEL }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           ✦ Girl Power
--bash: ✦: command not found
+    borderBottom:a?`2px solid ${C.rose}`:"2px solid transparent",
+    fontFamily:FONT_LABEL,
+  });
+  const pill = {
+    display:"inline-block", fontSize:9, letterSpacing:1, fontWeight:600,
+    textTransform:"uppercase", padding:"3px 9px", borderRadius:20,
+    background:C.rosePale, color:C.rose, border:`1px solid ${C.border2}`,
+    fontFamily:FONT_LABEL,
+  };
+
+  const dateStr = new Date().toLocaleDateString("en-GB", { weekday:"long", day:"numeric", month:"long" });
+
+  return (
+    <div style={{ minHeight:"100vh", background:C.bg, color:C.text, fontFamily:FONT_BODY, maxWidth:480, margin:"0 auto", paddingBottom:90 }}>
+
+      {/* ── Header ── */}
+      <div style={{ padding:"28px 20px 18px", borderBottom:`1px solid ${C.border}`, background:C.surface }}>
+        <div style={{ fontSize:10, fontWeight:600, letterSpacing:4, color:C.rose, textTransform:"uppercase", marginBottom:6, fontFamily:FONT_LABEL }}>
+          ✦ Girl Power
         </div>
         <div style={{ fontSize:22, fontWeight:400, color:C.text, letterSpacing:-0.3, fontFamily:FONT_BODY }}>
           {dateStr}
@@ -851,174 +393,75 @@ MacBook-Pro:~ tinemarienhof$           ✦ Girl Power
             <div style={{ display:"flex", gap:10, marginBottom:14 }}>
               <div style={{ flex:1 }}>
                 <label style={lbl}>Date</label>
-                <input type="date" MacBook-Pro:~ tinemarienhof$         </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$         <div style={{ fontSize:22, fontWeight:400, color:C.text, letterSpacing:-0.3, fontFamily:FONT_BODY }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           {dateStr}
--bash: {dateStr}: command not found
-MacBook-Pro:~ tinemarienhof$         </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$       </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$       {/* ── Nav ── */}
--bash: {/*: Not a directory
-MacBook-Pro:~ tinemarienhof$       <nav style={{ display:"flex", borderBottom:`1px solid ${C.border}`, position:"sticky", top:0, background:C.surface, zIndex:20 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$         {[["log","Log"],["history","History"],["prs","PRs"]].map(([id,label]) => (
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$           <button key={id} style={nb(view===id)} onClick={() => setView(id)}>{label}</button>
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$         ))}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$       </nav>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$       {/* ══ LOG ══════════════════════════════════════════════════ */}
--bash: {/*: Not a directory
-MacBook-Pro:~ tinemarienhof$       {view === "log" && (
->         <div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           <div style={{ padding:"18px 20px" }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$             <div style={{ display:"flex", gap:10, marginBottom:14 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               <div style={{ flex:1 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 <label style={lbl}>Date</label>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 <input type="date" style={inp} value={logDate} onChange={e => setLogDate(e.target.value)} />
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$               </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               <div style={{ flex:1 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 <label style={lbl}>Type</label>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 <div style={{ position:"relative" }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                   <select style={sel} value={logType} onChange={e => {
--bash: select: No such file or directory
-MacBook-Pro:~ tinemarienhof$                     setLogType(e.target.value); setLogName(""); setExercises([]); setLiftSelectVal("");
--bash: syntax error near unexpected token `e.target.value'
-MacBook-Pro:~ tinemarienhof$                   }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                     <option value="Power">Power</option>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                     <option value="WOD">WOD</option>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                   </select>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                   <span style={{ position:"absolute", right:12, top:"50%", transform:"translateY(-50%)", color:C.text3, pointerEvents:"none" }}>›</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$             {!isWL && (
--bash: !isWL: event not found
-MacBook-Pro:~ tinemarienhof$               <div style={{ marginBottom:14 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 <label style={lbl}>WOD Name</label>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 <input style={inp} placeholder="e.g. Fran, Murph…" value={logName} onChange={e => setLogName(e.target.value)} />
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$               </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$             {isWL && (
->               <div style={{ marginBottom:14 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 <label style={lbl}>Add Lift</label>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 {addCust ? (
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                   <div style={{ display:"flex", gap:8 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                     <input autoFocus style={{ ...inp, flex:1 }} placeholder="Exercise name…"
--bash: input: No such file or directory
-MacBook-Pro:~ tinemarienhof$                       value={custName} onChange={e => setCustName(e.target.value)}
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                       onKeyDown={e => { if(e.key==="Enter") confirmCustom(); if(e.key==="Escape"){ setAddCust(false); setCustName(""); } }} />
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                     <button onClick={confirmCustom} style={{ flexShrink:0, background:C.rose, color:"#fff", border:"none", borderRadius:12, padding:"0 16px", fontFamily:FONT_LABEL, fontSize:13, fontWeight:600, cursor:"pointer" }}>Add</button>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                     <button onClick={() => { setAddCust(false); setCustName(""); }} style={{ flexShrink:0, background:"transparent", border:`1px solid ${C.border2}`, color:C.text3, borderRadius:12, padding:"0 12px", fontFamily:FONT_LABEL, cursor:"pointer" }}>✕</button>
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                   </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 ) : (
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$                   <div style={{ position:"relative" }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                     <select style={sel} value={liftSelectVal} onChange={e => {
--bash: select: No such file or directory
-MacBook-Pro:~ tinemarienhof$                       const val = e.target.value;
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$                       if (val === "__custom__") { setAddCust(true); }
--bash: syntax error near unexpected token `{'
-MacBook-Pro:~ tinemarienhof$                       else if (val) { addLift(val); }
--bash: syntax error near unexpected token `else'
-MacBook-Pro:~ tinemarienhof$                     }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                       <option value="">— choose a lift —</option>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                       {(recentLifts.length > 0 || liftSelectVal) && (
->                         <optgroup label="Recent">
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                           {[...new Set([...(liftSelectVal?[liftSelectVal]:[]),...recentLifts])].map(l => (
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                             <option key={l} value={l}>{l}</option>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                           ))}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$                         </optgroup>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                       )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$                       <optgroup label="All Lifts">
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                         {otherLifts.map(l => <option key={l} value={l}>{l}</option>)}
--bash: syntax error near unexpected token `l'
-MacBook-Pro:~ tinemarienhof$                       </optgroup>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                       {otherCustom.length > 0 && (
->                         <optgroup label="My Custom Lifts">
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                           {otherCustom.map(l => <option key={l} value={l}>{l}</option>)}
--bash: syntax error near unexpected token `l'
-MacBook-Pro:~ tinemarienhof$                         </optgroup>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                       )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$                       <optgroup label="──────────">-bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                         <option value="__custom__">+ Add custom lift…</option>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                       </optgroup>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                     </select>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                     <span style={{ position:"absolute", right:12, top:"50%", transform:"translateY(-50%)", color:C.text3, pointerEvents:"none" }}>›</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                   </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$               </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$             <label style={lbl}>Notes / Result</label>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ 
+                <input type="date" style={inp} value={logDate} onChange={e => setLogDate(e.target.value)} />
+              </div>
+              <div style={{ flex:1 }}>
+                <label style={lbl}>Type</label>
+                <div style={{ position:"relative" }}>
+                  <select style={sel} value={logType} onChange={e => {
+                    setLogType(e.target.value); setLogName(""); setExercises([]); setLiftSelectVal("");
+                  }}>
+                    <option value="Power">Power</option>
+                    <option value="WOD">WOD</option>
+                  </select>
+                  <span style={{ position:"absolute", right:12, top:"50%", transform:"translateY(-50%)", color:C.text3, pointerEvents:"none" }}>›</span>
+                </div>
+              </div>
+            </div>
+
+            {!isWL && (
+              <div style={{ marginBottom:14 }}>
+                <label style={lbl}>WOD Name</label>
+                <input style={inp} placeholder="e.g. Fran, Murph…" value={logName} onChange={e => setLogName(e.target.value)} />
+              </div>
+            )}
+
+            {isWL && (
+              <div style={{ marginBottom:14 }}>
+                <label style={lbl}>Add Lift</label>
+                {addCust ? (
+                  <div style={{ display:"flex", gap:8 }}>
+                    <input autoFocus style={{ ...inp, flex:1 }} placeholder="Exercise name…"
+                      value={custName} onChange={e => setCustName(e.target.value)}
+                      onKeyDown={e => { if(e.key==="Enter") confirmCustom(); if(e.key==="Escape"){ setAddCust(false); setCustName(""); } }} />
+                    <button onClick={confirmCustom} style={{ flexShrink:0, background:C.rose, color:"#fff", border:"none", borderRadius:12, padding:"0 16px", fontFamily:FONT_LABEL, fontSize:13, fontWeight:600, cursor:"pointer" }}>Add</button>
+                    <button onClick={() => { setAddCust(false); setCustName(""); }} style={{ flexShrink:0, background:"transparent", border:`1px solid ${C.border2}`, color:C.text3, borderRadius:12, padding:"0 12px", fontFamily:FONT_LABEL, cursor:"pointer" }}>✕</button>
+                  </div>
+                ) : (
+                  <div style={{ position:"relative" }}>
+                    <select style={sel} value={liftSelectVal} onChange={e => {
+                      const val = e.target.value;
+                      if (val === "__custom__") { setAddCust(true); }
+                      else if (val) { addLift(val); }
+                    }}>
+                      <option value="">— choose a lift —</option>
+                      {(recentLifts.length > 0 || liftSelectVal) && (
+                        <optgroup label="Recent">
+                          {[...new Set([...(liftSelectVal?[liftSelectVal]:[]),...recentLifts])].map(l => (
+                            <option key={l} value={l}>{l}</option>
+                          ))}
+                        </optgroup>
+                      )}
+                      <optgroup label="All Lifts">
+                        {otherLifts.map(l => <option key={l} value={l}>{l}</option>)}
+                      </optgroup>
+                      {otherCustom.length > 0 && (
+                        <optgroup label="My Custom Lifts">
+                          {otherCustom.map(l => <option key={l} value={l}>{l}</option>)}
+                        </optgroup>
+                      )}
+                      <optgroup label="──────────">
+                        <option value="__custom__">+ Add custom lift…</option>
+                      </optgroup>
+                    </select>
+                    <span style={{ position:"absolute", right:12, top:"50%", transform:"translateY(-50%)", color:C.text3, pointerEvents:"none" }}>›</span>
+                  </div>
+                )}
+              </div>
+            )}
+
+            <label style={lbl}>Notes / Result</label>
+
             <textarea style={{ ...inp, minHeight:54, resize:"vertical", marginBottom:8 }} placeholder="Time, score, how it felt…"
               value={logNotes} onChange={e => setLogNotes(e.target.value)} />
 
@@ -1036,74 +479,24 @@ MacBook-Pro:~ tinemarienhof$
                 <input
                   type="file"
                   accept="image/*"
-                  style={{ position:"absolute", opacity:0, width:0, height:MacBo, resize:"vertical", marginBottom:8 }} placeholder="Time, score, how it felt…"
--bash: textarea: No such file or directory
-MacBook-Pro:~ tinemarienhof$               value={logNotes} onChange={e => setLogNotes(e.target.value)} />
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$             {/* Scan button below notes */}
--bash: {/*: Not a directory
-MacBook-Pro:~ tinemarienhof$             <label style={{
--bash: label: No such file or directory
-MacBook-Pro:~ tinemarienhof$               display:"inline-flex", alignItems:"center", justifyContent:"center", gap:6,
--bash: display:inline-flex,: command not found
-MacBook-Pro:~ tinemarienhof$               marginBottom:4, boxSizing:"border-box",
--bash: marginBottom:4,: command not found
-MacBook-Pro:~ tinemarienhof$               background:"transparent", border:`1px solid ${C.border2}`, borderRadius:20, padding:"6px 14px",
--bash: ${C.border2}: bad substitution
--bash: background:transparent,: command not found
-MacBook-Pro:~ tinemarienhof$               fontSize:11, fontWeight:500, color:C.text3,
--bash: fontSize:11,: command not found
-MacBook-Pro:~ tinemarienhof$               fontFamily:FONT_LABEL, cursor: imgReading ? "default" : "pointer",
--bash: fontFamily:FONT_LABEL,: command not found
-MacBook-Pro:~ tinemarienhof$               opacity: imgReading ? 0.7 : 1,
--bash: opacity:: command not found
-MacBook-Pro:~ tinemarienhof$             }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               {imgReading ? "⏳ Reading…" : "📷 Sca WOD from photo"}
--bash: {imgReading: command not found
-MacBook-Pro:~ tinemarienhof$               {!imgReading && (
--bash: !imgReading: event not found
-MacBook-Pro:~ tinemarienhof$                 <input
--bash: input: No such file or directory
-MacBook-Pro:~ tinemarienhof$                   type="file"
-MacBook-Pro:~ tinemarienhof$                   accept="image/*"
-MacBook-Pro:~ tinemarienhof$                   style={{ position:"absolute", opacity:0, width:0, height:0 }}
--bash: position:absolute,: command not found
-MacBook-Pro:~ tinemarienhof$                   onChange={e => {
--bash: =: command not found
-MacBook-Pro:~ tinemarienhof$                     const file = e.target.files && e.target.files[0];
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$                     if (file) readImageNotes(file);
--bash: syntax error near unexpected token `readImageNotes'
-MacBook-Pro:~ tinemarienhof$                     e.target.value = "";
--bash: e.target.value: command not found
-MacBook-Pro:~ tinemarienhof$                   }}
--bash: }}: command not found
-MacBook-Pro:~ tinemarienhof$                 />
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$             </label>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$           <div style={{ padding:"0 20px" }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             {exercises.length > 0 && <label style={lbl}>Exercises ({exercises.length})</label>}
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$             {exercises.map((ex, ei) => {
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$               const prKg = data.prs[ex.name] || null;
--bash: const: command not found
--bash: null: command not found
-MacBook-Pro:~ tinemarienhof$               return (
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 <div key={ei} style={card}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                   <div style={{ padding:"13px 16px", display:"flex", justifyContent:"space-between", alignItems:"center", borderBottom:`1px solid ${C.border}` }}>
--bash: syntax error near unexpected token `newline'
+                  style={{ position:"absolute", opacity:0, width:0, height:0 }}
+                  onChange={e => {
+                    const file = e.target.files && e.target.files[0];
+                    if (file) readImageNotes(file);
+                    e.target.value = "";
+                  }}
+                />
+              )}
+            </label>
+          </div>
+
+          <div style={{ padding:"0 20px" }}>
+            {exercises.length > 0 && <label style={lbl}>Exercises ({exercises.length})</label>}
+            {exercises.map((ex, ei) => {
+              const prKg = data.prs[ex.name] || null;
+              return (
+                <div key={ei} style={card}>
+                  <div style={{ padding:"13px 16px", display:"flex", justifyContent:"space-between", alignItems:"center", borderBottom:`1px solid ${C.border}` }}>
                     <div>
                       <span style={{ fontSize:16, fontWeight:600, color:C.text }}>{ex.name}</span>
                       {prKg && <span style={{ fontSize:11, color:C.text3, marginLeft:8, fontFamily:FONT_LABEL }}>PR {prKg} kg</span>}
@@ -1116,38 +509,6 @@ MacBook-Pro:~ tinemarienhof$                   <div style={{ padding:"13px 16px"
                       onAddSet={() => addSet(ei)}
                       onRemoveSet={si => remSet(ei,si)} />
                   </div>
-                </div>
-              );
-            })}
-          </div>
-
-          <div style={{ padding:"14px 20px" }}>
-            {todaySessions.length > 0 && (
-              <div style={{ fontSize:12, color:C.text3, textAlign:"center", marginBottom:10, fontFamily:FONT_LABEL }}>
-               MacBook-Pro:~ tinemarienhof$                     <div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                       <span style={{ fontSize:16, fontWeight:600, color:C.text }}>{ex.name}</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                       {prKg && <span style={{ fontSize:11, color:C.text3, marginLeft:8, fontFamily:FONT_LABEL }}>PR {prKg} kg</span>}
--bash: {prKg: command not found
-MacBook-Pro:~ tinemarienhof$                     </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                     <button style={gBtn} onClick={() => remEx(ei)}>×</button>
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                   </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                   <div style={{ padding:"14px 16px 16px" }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                     <SetTable sets={ex.sets} prKg={prKg}
--bash: SetTable: No such file or directory
-MacBook-Pro:~ tinemarienhof$                       onChange={(si,f,v) => updSet(ei,si,f,v)}
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                       onAddSet={() => addSet(ei)}
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                       onRemoveSet={si => remSet(ei,si)} />
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                   </div>
--bash: syntax error near unexpected token `newline'
                 </div>
               );
             })}
@@ -1170,115 +531,43 @@ MacBook-Pro:~ tinemarienhof$                   </div>
       {/* ══ HISTORY ══════════════════════════════════════════════ */}
       {view === "history" && (
         <div style={{ padding:"18px 20px" }}>
-          <div style={{ display:"flex", justifyContent:"space-between", alignItems:"centeMacBook-Pro:~ tinemarienhof$                 </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               );
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$             })}
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$           </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$           <div style={{ padding:"14px 20px" }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             {todaySessions.length > 0 && (
->               <div style={{ fontSize:12, color:C.text3, textAlign:"center", marginBottom:10, fontFamily:FONT_LABEL }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 {todaySessions.length} session{todaySessions.length>1?"s":""} saved today ✓
--bash: {todaySessions.length}: command not found
-MacBook-Pro:~ tinemarienhof$               </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$             <button style={{ ...pBtn, opacity:(!exercises.length&&!logNotes)?0.4:1 }}
--bash: !exercises.length: event not found
-MacBook-Pro:~ tinemarienhof$               onClick={saveSession} disabled={!exercises.length&&!logNotes}>
--bash: !exercises.length: event not found
-MacBook-Pro:~ tinemarienhof$               Save Session
--bash: Save: command not found
-MacBook-Pro:~ tinemarienhof$             </button>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$         </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$       )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$       {/* ══ HISTORY ══════════════════════════════════════════════ */}
--bash: {/*: Not a directory
-MacBook-Pro:~ tinemarienhof$       {view === "history" && (
->         <div style={{ padding:"18px 20px" }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:16 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             <label style={{ ...lbl, marginBottom:0 }}>{data.sessions.length} sessions logged</label>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             {data.sessions.length > 0 && (
->               <button onClick={() => {
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                 if (window.confirm("Clear all data?")) { setData({ sessions:[], prs:{} }); setCustoms([]); }
--bash: syntax error near unexpected token `"Clear all data?"'
-MacBook-Pro:~ tinemarienhof$               }} style={{ background:"transparent", border:`1px solid ${C.border2}`, color:C.text3, fontSize:10, letterSpacing:1, padding:"4px 10px", borderRadius:20, cursor:"pointer", fontFamily:FONT_LABEL }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 Clear all
+          <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:16 }}>
+            <label style={{ ...lbl, marginBottom:0 }}>{data.sessions.length} sessions logged</label>
+            {data.sessions.length > 0 && (
+              <button onClick={() => {
+                if (window.confirm("Clear all data?")) { setData({ sessions:[], prs:{} }); setCustoms([]); }
+              }} style={{ background:"transparent", border:`1px solid ${C.border2}`, color:C.text3, fontSize:10, letterSpacing:1, padding:"4px 10px", borderRadius:20, cursor:"pointer", fontFamily:FONT_LABEL }}>
+                Clear all
+              </button>
+            )}
+          </div>
 
-MacBook-Pro:~ tinemarienhof$               </button>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$           </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$           {data.sessions.length === 0 && <p style={{ color:C.text3, fontSize:14 }}>No sessions yet — start logging! 🌸</p>}
--bash: {data.sessions.length: command not found
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$           {/* Power */}
--bash: {/*: Not a directory
-MacBook-Pro:~ tinemarienhof$           {powerSessions.length > 0 && (
->             <div style={{ ...card, marginBottom:12 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               <div style={{ padding:"16px 18px", display:"flex", justifyContent:"space-between", alignItems:"center", cursor:"pointer" }}
--bash: div: No such file or directory
-MacBook-Pro:~ tinemarienhof$                 onClick={() => { setHistCat(histCat==="Power"?null:"Power"); setOpenLift(null); }}>
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                 <div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                   <span style={{ fontSize:17, fontWeight:600, color:C.text }}>Power</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                   <span style={{ fontSize:11, color:C.text3, marginLeft:10, fontFamily:FONT_LABEL }}>{liftNames.length} lift{liftNames.length!==1?"s":""}</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 <span style={{ color:C.rose, fontSize:18 }}>{histCat==="Power"?"‹":"›"}</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$               {histCat === "Power" && (
->                 <div style={{ borderTop:`1px solid ${C.border}` }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                   {liftNames.map((name, li) => {
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                     const entries = liftIndex[name].sort((a,b) => b.date.localeCompare(a.date));
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                     const prKg    = data.prs[name] || null;
--bash: const: command not found
--bash: null: command not found
-MacBook-Pro:~ tinemarienhof$                     const isOpen  = openLift === name;
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$                     return (
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                       <div key={name} style={{ borderBottom: li < liftNames.length-1 ? `1px solid ${C.border}` : "none" }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                         <div style={{ padding:"14px 18px", display:"flex", justifyContent:"space-between", alignItems:"center", cursor:"pointer" }}
--bash: div: No such file or directory
-MacBook-Pro:~ tinemarienhof$                           onClick={() => setOpenLift(isOpen?null:name)}>
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                           <div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                             <span style={{ fontSize:15, fontWeight:500, color:C.text }}>{name}</span>
--bash: syntax error near unexpected token `newline'
+          {data.sessions.length === 0 && <p style={{ color:C.text3, fontSize:14 }}>No sessions yet — start logging! 🌸</p>}
+
+          {/* Power */}
+          {powerSessions.length > 0 && (
+            <div style={{ ...card, marginBottom:12 }}>
+              <div style={{ padding:"16px 18px", display:"flex", justifyContent:"space-between", alignItems:"center", cursor:"pointer" }}
+                onClick={() => { setHistCat(histCat==="Power"?null:"Power"); setOpenLift(null); }}>
+                <div>
+                  <span style={{ fontSize:17, fontWeight:600, color:C.text }}>Power</span>
+                  <span style={{ fontSize:11, color:C.text3, marginLeft:10, fontFamily:FONT_LABEL }}>{liftNames.length} lift{liftNames.length!==1?"s":""}</span>
+                </div>
+                <span style={{ color:C.rose, fontSize:18 }}>{histCat==="Power"?"‹":"›"}</span>
+              </div>
+
+              {histCat === "Power" && (
+                <div style={{ borderTop:`1px solid ${C.border}` }}>
+                  {liftNames.map((name, li) => {
+                    const entries = liftIndex[name].sort((a,b) => b.date.localeCompare(a.date));
+                    const prKg    = data.prs[name] || null;
+                    const isOpen  = openLift === name;
+                    return (
+                      <div key={name} style={{ borderBottom: li < liftNames.length-1 ? `1px solid ${C.border}` : "none" }}>
+                        <div style={{ padding:"14px 18px", display:"flex", justifyContent:"space-between", alignItems:"center", cursor:"pointer" }}
+                          onClick={() => setOpenLift(isOpen?null:name)}>
+                          <div>
+                            <span style={{ fontSize:15, fontWeight:500, color:C.text }}>{name}</span>
                             {prKg && <span style={{ fontSize:11, color:C.rose, marginLeft:8, fontFamily:FONT_LABEL }}>PR {prKg} kg</span>}
                           </div>
                           <div style={{ display:"flex", gap:8, alignItems:"center" }}>
@@ -1294,222 +583,103 @@ MacBook-Pro:~ tinemarienhof$                             <span style={{ fontSize
                             </div>
                             {entries.map((entry, ei) => (
                               <div key={ei} style={{ marginBottom:16 }}>
- MacBook-Pro:~ tinemarienhof$                             {prKg && <span style={ fontSize:11, color:C.rose, marginLeft:8, fontFamily:FONT_LABEL }}>PR {prKg} kg</span>}
--bash: {prKg: command not found
-MacBook-Pro:~ tinemarienhof$                           </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                           <div style={{ display:"flex", gap:8, alignItems:"center" }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                             <span style={{ fontSize:11, color:C.text3, fontFamily:FONT_LABEL }}>{entries.length}×</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                             <span style={{ color:C.rose, fontSize:16 }}>{isOpen?"‹":"›"}</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                           </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                         </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$                         {isOpen && (
->                           <div style={{ background:C.surface2, padding:"16px 18px", borderTop:`1px solid ${C.border}` }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                             <div style={{ marginBottom:16 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                               <ProgressChart points={getProgress(name)} />
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                             </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                             {entries.map((entry, ei) => (
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                               <div key={ei} style={{ marginBottom:16 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                                 <div style={{ fontSize:10, color:C.rose, letterSpacing:2, textTransform:"uppercase", marginBottom:8, fontFamily:FONT_LABEL }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                                   {fmt(entry.date)}
--bash: syntax error near unexpected token `entry.date'
-MacBook-Pro:~ tinemarienhof$                                 </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                                 <div style={{ display:"grid", gridTemplateColumns:"28px 1fr 1fr", gap:4, marginBottom:4 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                                   <span style={{ fontSize:9, color:C.text3, textAlign:"center", fontFamily:FONT_LABEL }}>#</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                                   <span style={{ fontSize:9, color:C.text3, letterSpacing:2, textAlign:"center", fontFamily:FONT_LABEL }}>Reps</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                                   <span style={{ fontSize:9, color:C.text3, letterSpacing:2, textAlign:"center", fontFamily:FONT_LABEL }}>kg</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                                 </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                                 {entry.sets.map((s, si) => {
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                                   const w = parseFloat(s.weight);
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                                   const pr = prKg && !isNaN(w) && w >= prKg;
--bash: !isNaN: event not found
-MacBook-Pro:~ tinemarienhof$                                   return (
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                                     <div key={si} style={{ display:"grid", gridTemplateColumns:"28px 1fr 1fr", gap:4, padding:"4px 0" }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                                       <span style={{ fontSize:11, color:pr?C.rose:C.text3, textAlign:"center", fontFamily:FONT_LABEL }}>{pr?"♡":si+1}</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                                       <span style={{ fontSize:14, textAlign:"center", color:C.text2 }}>{s.reps||"—"}</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                                       <span style={{ fontSize:14, textAlign:"center", color:pr?C.rose:C.text2 }}>{s.weight?`${s.weight} kg`:"—"}</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                                     </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                                   );
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$                                 })}
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$                               </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                             ))}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$                           </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                         )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$                       </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                     );
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$                   })}
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$                 </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$             </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$           {/* WOD */}
--bash: {/*: Not a directory
-MacBook-Pro:~ tinemarienhof$           {wodSessions.length > 0 && (
->             <div style={card}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               <div style={{ padding:"16px 18px", display:"flex", justifyContent:"space-between", alignItems:"center", cursor:"pointer" }}
--bash: div: No such file or directory
-MacBook-Pro:~ tinemarienhof$                 onClick={() => { setHistCat(histCat==="WOD"?null:"WOD"); setOpenWod(null); }}>
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                 <div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                   <span style={{ fontSize:17, fontWeight:600, color:C.text }}>WOD</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                   <span style={{ fontSize:11, color:C.text3, marginLeft:10, fontFamily:FONT_LABEL }}>{wodSessions.length} session{wodSessions.length!==1?"s":""}</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 <span style={{ color:C.rose, fontSize:18 }}>{histCat==="WOD"?"‹":"›"}</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               {histCat === "WOD" && (
->                 <div style={{ borderTop:`1px solid ${C.border}` }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                   {wodSessions.map((ses, si) => {
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                     const isOpen = openWod === ses.id;
--bash: const: command not found
-MacBook-Pro:~ tinemarienhof$                     return (
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                       <div key={ses.id} style={{ borderBottom: si < wodSessions.length-1 ? `1px solid ${C.border}` : "none" }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                         <div style={{ padding:"14px 18px", display:"flex", justifyContent:"space-between", alignItems:"center", cursor:"pointer" }}
--bash: div: No such file or directory
-MacBook-Pro:~ tinemarienhof$                           onClick={() => setOpenWod(isOpen?null:ses.id)}>
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                           <div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                             <div style={{ fontSize:15, fontWeight:500, color:C.text }}>{ses.wodName || "WOD"}</div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                             <div style={{ fontSize:11, color:C.text3, marginTop:2, fontFamily:FONT_LABEL }}>{fmt(ses.date)}</div>
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$                           </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                           <span style={{ color:C.rose, fontSize:16 }}>{isOpen?"‹":"›"}</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                         </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                         {isOpen && (
->                           <div style={{ background:C.surface2, padding:"14px 18px", borderTop:`1px solid ${C.border}` }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                             <span style={{ fontSize:14, color:C.text2 }}>{ses.notes || "No notes recorded"}</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                           </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                         )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$                       </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                     );
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$                   })}
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$                 </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$             </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$         </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$       )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$       {/* ══ PRs ══════════════════════════════════════════════════ */}
--bash: {/*: Not a directory
-MacBook-Pro:~ tinemarienhof$       {view === "prs" && (
->         <div style={{ padding:"18px 20px" }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           <label style={lbl}>{Object.keys(data.prs).length} personal records</label>
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$           {Object.keys(data.prs).length === 0 && <p style={{ color:C.text3, fontSize:14 }}>Log sessions with weights to track your PRs ✨</p>}
--bash: syntax error near unexpected token `data.prs'
-MacBook-Pro:~ tinemarienhof$           <div style={{ background:C.surface, border:`1px solid ${C.border}`, borderRadius:16, overflow:"hidden", boxShadow:"0 2px 12px rgba(180,100,90,0.06)" }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             {Object.entries(data.prs).sort((a,b)=>a[0].localeCompare(b[0])).map(([name,weight],i,arr) => (
--bash: syntax error near unexpected token `data.prs'
-MacBook-Pro:~ tinemarienhof$               <div key={name} style={{ display:"flex", justifyContent:"space-between", alignItems:"center", padding:"14px 18px", borderBottom:i<arr.length-1?`1px solid ${C.border}`:"none" }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 <span style={{ fontSize:15, fontWeight:500, color:C.text }}>{name}</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 <div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                   <span style={{ fontSize:22, fontWeight:600, color:C.rose }}>{weight}</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                   <span style={{ fontSize:12, color:C.text3, marginLeft:4, fontFamily:FONT_LABEL }}>kg</span>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$                 </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             ))}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$           </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$         </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$       )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$       {/* Toast */}
--bash: {/*: Not a directory
-MacBook-Pro:~ tinemarienhof$       <div style={{
--bash: div: No such file or directory
-MacBook-Pro:~ tinemarienhof$         position:"fixed", bottom:100, left:"50%", transform:"translateX(-50%)",
--bash: position:fixed,: command not found
-MacBook-Pro:~ tinemarienhof$         background:C.rose, color:"#fff", padding:"12px 28px", borderRadius:24,
--bash: background:C.rose,: command not found
-MacBook-Pro:~ tinemarienhof$         fontSize:13, letterSpacing:1, fontFamily:FONT_LABEL,
--bash: fontSize:13,: command not found
-MacBook-Pro:~ tinemarienhof$         boxShadow:`0 4px 20px ${C.rose}66`,
--bash: ${C.rose}66: bad substitution
--bash: boxShadow:,: command not found
-MacBook-Pro:~ tinemarienhof$         opacity:saved?1:0, transition:"opacity 0.3s", pointerEvents:"none", zIndex:100,
--bash: opacity:saved?1:0,: command not found
+                                <div style={{ fontSize:10, color:C.rose, letterSpacing:2, textTransform:"uppercase", marginBottom:8, fontFamily:FONT_LABEL }}>
+                                  {fmt(entry.date)}
+                                </div>
+                                <div style={{ display:"grid", gridTemplateColumns:"28px 1fr 1fr", gap:4, marginBottom:4 }}>
+                                  <span style={{ fontSize:9, color:C.text3, textAlign:"center", fontFamily:FONT_LABEL }}>#</span>
+                                  <span style={{ fontSize:9, color:C.text3, letterSpacing:2, textAlign:"center", fontFamily:FONT_LABEL }}>Reps</span>
+                                  <span style={{ fontSize:9, color:C.text3, letterSpacing:2, textAlign:"center", fontFamily:FONT_LABEL }}>kg</span>
+                                </div>
+                                {entry.sets.map((s, si) => {
+                                  const w = parseFloat(s.weight);
+                                  const pr = prKg && !isNaN(w) && w >= prKg;
+                                  return (
+                                    <div key={si} style={{ display:"grid", gridTemplateColumns:"28px 1fr 1fr", gap:4, padding:"4px 0" }}>
+                                      <span style={{ fontSize:11, color:pr?C.rose:C.text3, textAlign:"center", fontFamily:FONT_LABEL }}>{pr?"♡":si+1}</span>
+                                      <span style={{ fontSize:14, textAlign:"center", color:C.text2 }}>{s.reps||"—"}</span>
+                                      <span style={{ fontSize:14, textAlign:"center", color:pr?C.rose:C.text2 }}>{s.weight?`${s.weight} kg`:"—"}</span>
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* WOD */}
+          {wodSessions.length > 0 && (
+            <div style={card}>
+              <div style={{ padding:"16px 18px", display:"flex", justifyContent:"space-between", alignItems:"center", cursor:"pointer" }}
+                onClick={() => { setHistCat(histCat==="WOD"?null:"WOD"); setOpenWod(null); }}>
+                <div>
+                  <span style={{ fontSize:17, fontWeight:600, color:C.text }}>WOD</span>
+                  <span style={{ fontSize:11, color:C.text3, marginLeft:10, fontFamily:FONT_LABEL }}>{wodSessions.length} session{wodSessions.length!==1?"s":""}</span>
+                </div>
+                <span style={{ color:C.rose, fontSize:18 }}>{histCat==="WOD"?"‹":"›"}</span>
+              </div>
+              {histCat === "WOD" && (
+                <div style={{ borderTop:`1px solid ${C.border}` }}>
+                  {wodSessions.map((ses, si) => {
+                    const isOpen = openWod === ses.id;
+                    return (
+                      <div key={ses.id} style={{ borderBottom: si < wodSessions.length-1 ? `1px solid ${C.border}` : "none" }}>
+                        <div style={{ padding:"14px 18px", display:"flex", justifyContent:"space-between", alignItems:"center", cursor:"pointer" }}
+                          onClick={() => setOpenWod(isOpen?null:ses.id)}>
+                          <div>
+                            <div style={{ fontSize:15, fontWeight:500, color:C.text }}>{ses.wodName || "WOD"}</div>
+                            <div style={{ fontSize:11, color:C.text3, marginTop:2, fontFamily:FONT_LABEL }}>{fmt(ses.date)}</div>
+                          </div>
+                          <span style={{ color:C.rose, fontSize:16 }}>{isOpen?"‹":"›"}</span>
+                        </div>
+                        {isOpen && (
+                          <div style={{ background:C.surface2, padding:"14px 18px", borderTop:`1px solid ${C.border}` }}>
+                            <span style={{ fontSize:14, color:C.text2 }}>{ses.notes || "No notes recorded"}</span>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* ══ PRs ══════════════════════════════════════════════════ */}
+      {view === "prs" && (
+        <div style={{ padding:"18px 20px" }}>
+          <label style={lbl}>{Object.keys(data.prs).length} personal records</label>
+          {Object.keys(data.prs).length === 0 && <p style={{ color:C.text3, fontSize:14 }}>Log sessions with weights to track your PRs ✨</p>}
+          <div style={{ background:C.surface, border:`1px solid ${C.border}`, borderRadius:16, overflow:"hidden", boxShadow:"0 2px 12px rgba(180,100,90,0.06)" }}>
+            {Object.entries(data.prs).sort((a,b)=>a[0].localeCompare(b[0])).map(([name,weight],i,arr) => (
+              <div key={name} style={{ display:"flex", justifyContent:"space-between", alignItems:"center", padding:"14px 18px", borderBottom:i<arr.length-1?`1px solid ${C.border}`:"none" }}>
+                <span style={{ fontSize:15, fontWeight:500, color:C.text }}>{name}</span>
+                <div>
+                  <span style={{ fontSize:22, fontWeight:600, color:C.rose }}>{weight}</span>
+                  <span style={{ fontSize:12, color:C.text3, marginLeft:4, fontFamily:FONT_LABEL }}>kg</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Toast */}
+      <div style={{
+        position:"fixed", bottom:100, left:"50%", transform:"translateX(-50%)",
+        background:C.rose, color:"#fff", padding:"12px 28px", borderRadius:24,
+        fontSize:13, letterSpacing:1, fontFamily:FONT_LABEL,
+        boxShadow:`0 4px 20px ${C.rose}66`,
+        opacity:saved?1:0, transition:"opacity 0.3s", pointerEvents:"none", zIndex:100,
       }}>
         Saved ✓
       </div>
@@ -1530,71 +700,24 @@ MacBook-Pro:~ tinemarienhof$         opacity:saved?1:0, transition:"opacity 0.3s
               100% { transform: translateY(100vh) rotate(720deg); opacity:0; }
             }
             .confetti-piece { position:fixed; top:-10px; animation: confettiFall linear forwards; border-radius:2px; }
-          `}</stMacBook-Pro:~ tinemarienhof$       }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$         Saved ✓
--bash: Saved: command not found
-MacBook-Pro:~ tinemarienhof$       </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$       {/* PR Banner */}
--bash: {/*: Not a directory
-MacBook-Pro:~ tinemarienhof$       {prCelebration && (
->         <div style={{
->           position:"fixed", top:0, left:0, right:0, zIndex:200,
->           display:"flex", flexDirection:"column", alignItems:"center",
->           animation:"slideDown 0.4s ease-out",
->         }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           <style>{`
->             @keyframes slideDown { from { transform:translateY(-100%); } to { transform:translateY(0); } }
->             @keyframes fadeUp { from { opacity:1; transform:translateY(0); } to { opacity:0; transform:translateY(-20px); } }
->             .pr-banner { animation: slideDown 0.4s ease-out, fadeUp 0.5s ease-in 3.5s forwards; }
->             @keyframes confettiFall {
->               0%   { transform: translateY(-10px) rotate(0deg);   opacity:1; }
->               100% { transform: translateY(100vh) rotate(720deg); opacity:0; }
->             }
->             .confetti-piece { position:fixed; top:-10px; animation: confettiFall linear forwards; border-radius:2px; }
->           `}</style>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$           {/* Confetti */}
--bash: {/*: Not a directory
-MacBook-Pro:~ tinemarienhof$           {[...Array(30)].map((_, i) => (
--bash: syntax error near unexpected token `30'
-MacBook-Pro:~ tinemarienhof$             <div key={i} className="confetti-piece" style={{
--bash: div: No such file or directory
-MacBook-Pro:~ tinemarienhof$               left: `${Math.random()*100}%`,
--bash: ${Math.random()*100}%: bad substitution
--bash: left:: command not found
-MacBook-Pro:~ tinemarienhof$               width: `${6 + Math.random()*6}px`,
--bash: ${6 + Math.random()*6}px: bad substitution
--bash: width:: command not found
-MacBook-Pro:~ tinemarienhof$               height: `${10 + Math.random()*8}px`,
--bash: ${10 + Math.random()*8}px: bad substitution
--bash: height:: command not found
-MacBook-Pro:~ tinemarienhof$               background: [C.rose,"#f4a7a3","#fcd5ce","#c77daa","#e8c8c0","#f9e4e1"][i%6],
--bash: background:: command not found
-MacBook-Pro:~ tinemarienhof$               animationDuration: `${1.5 + Math.random()*2}s`,
--bash: ${1.5 + Math.random()*2}s: bad substitution
--bash: animationDuration:: command not found
-MacBook-Pro:~ tinemarienhof$               animationDelay: `${Math.random()*0.5}s`,
--bash: ${Math.random()*0.5}s: bad substitution
--bash: animationDelay:: command not found
-MacBook-Pro:~ tinemarienhof$             }}/>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           ))}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$           {/* Banner */}
--bash: {/*: Not a directory
-MacBook-Pro:~ tinemarienhof$           <div className="pr-banner" style={{
--bash: div: No such file or directory
-MacBook-Pro:~ tinemarienhof$             background: `linear-gradient(135deg, ${C.rose}, #c77daa)`,
--bash: command substitution: line 1: syntax error near unexpected token `135deg,'
--bash: command substitution: line 1: `linear-gradient(135deg, ${C.rose}, #c77daa)'
--bash: background:: command not found
-MacBook-Pro:~ tinemarienhof$             color:"#fff", padding:"18px 32px", width:"100%",
+          `}</style>
+
+          {/* Confetti */}
+          {[...Array(30)].map((_, i) => (
+            <div key={i} className="confetti-piece" style={{
+              left: `${Math.random()*100}%`,
+              width: `${6 + Math.random()*6}px`,
+              height: `${10 + Math.random()*8}px`,
+              background: [C.rose,"#f4a7a3","#fcd5ce","#c77daa","#e8c8c0","#f9e4e1"][i%6],
+              animationDuration: `${1.5 + Math.random()*2}s`,
+              animationDelay: `${Math.random()*0.5}s`,
+            }}/>
+          ))}
+
+          {/* Banner */}
+          <div className="pr-banner" style={{
+            background: `linear-gradient(135deg, ${C.rose}, #c77daa)`,
+            color:"#fff", padding:"18px 32px", width:"100%",
             textAlign:"center", boxShadow:"0 4px 24px rgba(180,80,100,0.35)",
           }}>
             <div style={{ fontSize:22, marginBottom:4 }}>🏆✨🎉</div>
@@ -1617,46 +740,4 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
   </script>
 </body>
-</html>-bash: color:#fff,: command not found
-MacBook-Pro:~ tinemarienhof$             textAlign:"center", boxShadow:"0 4px 24px rgba(180,80,100,0.35)",
--bash: textAlign:center,: command not found
-MacBook-Pro:~ tinemarienhof$           }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             <div style={{ fontSize:22, marginBottom:4 }}>🏆✨🎉</div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             <div style={{ fontSize:18, fontWeight:700, fontFamily:FONT_LABEL, letterSpacing:0.5 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               New Personal Record!
--bash: New: command not found
-MacBook-Pro:~ tinemarienhof$             </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$             <div style={{ fontSize:15, fontFamily:FONT_BODY, marginTop:4, opacity:0.92 }}>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$               {prCelebration.name} — {prCelebration.weight} kg
--bash: {prCelebration.name}: command not found
-MacBook-Pro:~ tinemarienhof$             </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$           </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$         </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$       )}
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$     </div>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$   );
--bash: syntax error near unexpected token `)'
-MacBook-Pro:~ tinemarienhof$ }
--bash: syntax error near unexpected token `}'
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$ 
-MacBook-Pro:~ tinemarienhof$ const root = ReactDOM.createRoot(document.getElementById('root'));
--bash: syntax error near unexpected token `('
-MacBook-Pro:~ tinemarienhof$ root.render(<App />);
--bash: syntax error near unexpected token `<'
-MacBook-Pro:~ tinemarienhof$   </script>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ </body>
--bash: syntax error near unexpected token `newline'
-MacBook-Pro:~ tinemarienhof$ </html>
+</html>
